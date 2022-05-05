@@ -1,0 +1,18 @@
+.home-container{
+  display: flex;
+  height: 90vh;
+}
+
+.box-right{
+  height: 90vh;
+  width: 45%;
+  background-color: #ABA59C ;
+}
+
+/* .img-bg{
+ 
+} */
+
+.box-left img{
+  height: 90vh;
+}

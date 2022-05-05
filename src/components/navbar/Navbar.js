@@ -7,7 +7,7 @@ const Navbar = () => {
     <header>
       <nav className='navbar'>
         <div className='left-side'>
-          <h1>MIKI ARNDT</h1>
+          <Link to='/home'><h1>MIKI ARNDT</h1></Link>
         </div>
         <div className='right-side'>
           <Link to='/about'>About</Link>

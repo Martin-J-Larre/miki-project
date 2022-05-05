@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Navbar from './components/navbar/Navbar';
-import Home from './pages/Home';
-import About from './pages/About';
+import Footer from './components/footer/Footer';
+import Home from './pages/home/Home';
+import About from './pages/about/About';
 import Publications from './pages/Publications';
 import News from './pages/News';
 import Events from './pages/Events';
@@ -14,13 +15,14 @@ function App() {
         <Navbar />
         <Switch>
           <Route path='/home' exact component={ Home }/>
-          <Route path='/about' component={ About }/>
-          <Route path='/publications' component={ Publications }/>
-          <Route path='/news' component={ News }/>
-          <Route path='/events' component={ Events }/>
-          <Route path='/contact' component={ Contact }/>
+          <Route path='/about' exact component={ About }/>
+          <Route path='/publications' exact component={ Publications }/>
+          <Route path='/news' exact component={ News }/>
+          <Route path='/events' exact component={ Events }/>
+          <Route path='/contact' exact component={ Contact }/>
         </Switch>
       </Router>
+      <Footer />
     </>
   );
 }
