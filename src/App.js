@@ -3,10 +3,10 @@ import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import Home from './pages/home/Home';
 import About from './pages/about/About';
-import Publications from './pages/Publications';
-import News from './pages/News';
-import Events from './pages/Events';
-import Contact from './pages/Contact';
+import Publications from './pages/publications/Publications';
+import News from './pages/news/News';
+import Events from './pages/events/Events';
+import Contact from './pages/contact/Contact';
 
 function App() {
   return (
