@@ -1,0 +1,21 @@
+.box-news{
+  height: 75vh;
+  border: 1px solid rgba(0, 0, 0, 0.237);
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-rows:  50% 50%;
+}
+.img-box{
+  width: 100%;
+}
+.img-box img{
+  width: 75%;
+  margin: 10px;
+  
+}
+.text-news{ 
+  border: 1px solid rgba(0, 0, 0, 0.237);
+}
+.text-news p{ 
+  padding: 0px 40px;
+}

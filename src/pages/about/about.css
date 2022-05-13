@@ -4,24 +4,24 @@
   margin: 30px;
 }
 
-.img-box {
+.img-box-about {
   width: 40%;
   display: flex;
   justify-content: center;
 }
 
-.img-box img{
+.img-box-about img{
   width: 60%;
 }
 
-.text-box {
+.text-box-about {
   width: 40%;
 }
 
-.text-box h1 {
+.text-box-about h1 {
   text-align: center;
   margin-top: 50px;
 }
-.text-box p {
+.text-box-about p {
   margin: 10px 50px;
 }

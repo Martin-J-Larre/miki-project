@@ -1,1 +1,8 @@
-h1{ text-align: center;}
+h1{
+  text-align: center;
+}
+.news-container{
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  justify-content: space-around;
+}
