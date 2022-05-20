@@ -1,5 +1,5 @@
 /* CAAMBIAR TODO CON GRID */
-.contact-container{
+.contactContainer{
   display: flex;
   justify-content: center;
 }
@@ -46,7 +46,7 @@ input[type="submit"] {
   border: none;
 }
 
-.name-group{
+.nameGroup{
   width: 100%;
   display: flex;
   justify-content: space-between;

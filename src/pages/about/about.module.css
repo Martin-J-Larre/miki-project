@@ -1,27 +1,27 @@
-.about-container {
+.aboutContainer {
   display: flex;
   justify-content: center;
   margin: 30px;
 }
 
-.img-box-about {
+.imgBoxAbout {
   width: 40%;
   display: flex;
   justify-content: center;
 }
 
-.img-box-about img{
+.imgBoxAbout img{
   width: 60%;
 }
 
-.text-box-about {
+.textBoxAbout {
   width: 40%;
 }
 
-.text-box-about h1 {
+.textBoxAbout h1 {
   text-align: center;
   margin-top: 50px;
 }
-.text-box-about p {
+.textBoxAbout p {
   margin: 10px 50px;
 }

@@ -1,15 +1,15 @@
 import React from 'react';
-import './navbar.css';
+import styles from'./navbar.module.css';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <header>
-      <nav className='navbar'>
-        <div className='left-side'>
+      <nav className={styles.navbar}>
+        <div className={styles.leftSide}>
           <Link to='/home'><h1>MIKI ARNDT</h1></Link>
         </div>
-        <div className='right-side'>
+        <div className={styles.rightSide}>
           <Link to='/about'>About</Link>
           <Link to='/publications'>Publications</Link>
           <Link to='/news'>News</Link>

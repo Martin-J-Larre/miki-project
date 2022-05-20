@@ -1,14 +1,14 @@
 import React from 'react';
-import './newsBox.css'
+import styles from'./newsBox.module.css'
 
 const NewsBox = ({ imgNews, textNews, altNewsImg }) => {
   return (
     <>
-      <div className='box-news'>
-        <div className='img-box'>
+      <div className={styles.boxNews}>
+        <div className={styles.imgBox}>
           <img src={ imgNews } alt={ altNewsImg } />
         </div>
-        <div className='text-news'>
+        <div className={styles.textNews}>
           <p>{ textNews }</p>
         </div>
       </div>

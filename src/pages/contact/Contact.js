@@ -1,13 +1,13 @@
 import React from "react";
-import "./contact.css";
+import styles from "./contact.module.css";
 
 const Contact = () => {
     return (
         <section>
           <h1>Contact</h1>
-          <div className="contact-container">
+          <div className={styles.contactContainer}>
             <form>
-                <div className="name-group">
+                <div className={styles.nameGroup}>
                     <input
                         type="text"
                         name="user_name"
@@ -23,7 +23,7 @@ const Contact = () => {
                     type="email"
                     name="user_email"
                     placeholder="Subject"
-                    className="email"
+                    className={styles.email}
                 />
                 <textarea name="message" placeholder="Message" />
                 <input type="submit" value="Send" />

@@ -4,15 +4,15 @@
   margin-bottom: 30px;
 }
 
-.image-box img {
+.imageBox img {
   width: 50%;
   margin: 20px 100px;
 }
 
-.link-box {
+.linkBox {
   border-top: 1px solid black;
   padding-top: 10px;
 }
-.link-box a {
+.linkBox a {
   color: black
 }

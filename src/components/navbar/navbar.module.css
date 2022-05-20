@@ -7,21 +7,21 @@
   display: flex;
   flex-direction: row;
 }
-.left-side {
+.leftSide {
   width: 30%;
   height: 100%;
   display: flex;
   align-items: center;
   padding-left: 50px;
 }
-.left-side h1{
+.leftSide h1{
   text-align: center;
   font-family: 'Cardo', serif;
   color: #fff;
   font-weight: 400;
   font-size: 3rem;
 }
-.right-side {
+.rightSide {
   width: 70%;
   height: 100%;
   display: flex;

@@ -1,0 +1,15 @@
+.homeContainer{
+  display: grid;
+  height: 90vh;
+  grid-template-columns: auto 60%;
+}
+
+.boxRight{
+  height: 90vh;
+  background-color: #ABA59C ;
+}
+
+
+.boxLeft img{
+  height: 90vh;
+}
