@@ -1,0 +1,10 @@
+.list{
+  text-align: center;
+  list-style: none;
+}
+.list li{
+  display: inline-block ;
+  font-size: 20px;
+  background-color: lightgray;
+  padding: 5px 10px;
+}

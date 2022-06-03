@@ -1,18 +1,21 @@
 import React from 'react';
-import styles from './events.css'
+import LinkAdress from '../../components/linkAdress/LinkAdress';
+import MapAddress from '../../components/mapAddress/MapAddress';
+import ListAddress from '../../components/listAddress/ListAddress';
+import styles from './events.css';
+
 
 const Events = () => {
   return (
-    <div>
-    <h1>Events page soon here</h1>
-    <h1>Events page soon here</h1>
-    <h1>Events page soon here</h1>
-    <h1>Events page soon here</h1>
-    <h1>Events page soon here</h1>
-    <h1>Events page soon here</h1>
-    <h1>Events page soon here</h1>
-    <h1>Events page soon here</h1>
-  </div>
+    <section>
+      <div className={styles.addressContainer}>
+              <ListAddress address="Address 1234, Manhattan, New York" listAddressIcon={<LinkAdress />}/>
+              <ListAddress address="Address 1234, Manhattan, New York" listAddressIcon={<LinkAdress />}/>
+              <ListAddress address="Address 1234, Manhattan, New York" listAddressIcon={<LinkAdress />}/>
+      </div>
+              <MapAddress />
+
+  </section>
   )
 }
 

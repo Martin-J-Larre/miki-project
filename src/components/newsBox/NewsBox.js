@@ -16,4 +16,4 @@ const NewsBox = ({ imgNews, textNews, altNewsImg }) => {
   )
 }
 
-export default NewsBox
+export default NewsBox;
