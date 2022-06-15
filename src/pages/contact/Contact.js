@@ -29,10 +29,15 @@ const Contact = () => {
                     console.log(error.text);
                 }
             );
+            e.target.reset();
+            setTimeout(() => {
+                alert("Mensaje enviado");
+            }, 1000);
+            
     };
     return (
         <section>
-            <h1>Contact</h1>
+            <h1 className={styles.titleContact}>Contact</h1>
             <div className={styles.contactContainer}>
                 
                 <form 

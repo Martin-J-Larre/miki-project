@@ -1,9 +1,23 @@
 h1{ 
   text-align: center;
+  font-size: 2rem;
+  margin: 10px;
+  padding: 0px;
+  color: #1e1e1e;
 }
 .container-publications{
+  height: 73vh;
   display: grid;
   grid-template-columns: 30% 30% 30%;
   justify-content: space-around;
 }
 
+@media (max-width: 375px){
+  .container-publications{
+    max-width: 375px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

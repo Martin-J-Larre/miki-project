@@ -1,22 +1,20 @@
-import React from 'react';
-import LinkAdress from '../../components/linkAdress/LinkAdress';
-import MapAddress from '../../components/mapAddress/MapAddress';
-import ListAddress from '../../components/listAddress/ListAddress';
-import styles from './events.css';
-
+import EventsBox from "../../components/eventsBox/EventsBox";
+import styles from "./events.module.css";
+import event1Pic from "../../img/Event-1.png";
+import event2Pic from "../../img/Event-2.png";
+import event3Pic from "../../img/Event-3-posta.png";
 
 const Events = () => {
-  return (
-    <section>
-      <div className={styles.addressContainer}>
-              <ListAddress address="Address 1234, Manhattan, New York" listAddressIcon={<LinkAdress />}/>
-              <ListAddress address="Address 1234, Manhattan, New York" listAddressIcon={<LinkAdress />}/>
-              <ListAddress address="Address 1234, Manhattan, New York" listAddressIcon={<LinkAdress />}/>
-      </div>
-              <MapAddress />
+    return (
+        <section>
+            <h1 className={styles.titleEvents}>Events</h1>
+            <div className={styles.eventsContainer}>
+                <EventsBox eventPic={event1Pic} urlDetailEvent={""} />
+                <EventsBox eventPic={event2Pic} urlDetailEvent={""} />
+                <EventsBox eventPic={event3Pic} urlDetailEvent={""} />
+            </div>
+        </section>
+    );
+};
 
-  </section>
-  )
-}
-
-export default Events
+export default Events;

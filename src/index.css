@@ -1,6 +1,154 @@
+
+:root{
+  --color-1-darkgray: #867c7c;
+  --color-2-blue: #082CF6;
+  --color-3-darkgreen: #4C764C;
+  --color-4-lightgreen: #80EB80;
+  --color-5-violet: #D40BF0;
+  --color-6-navyblue: #21618C;
+  --color-7-indiared: #CD5C5C;
+  --color-8-army-green: #666633 ;
+  --color-9-lightgray: #BDC3C7;
+  --color-10-black: #000 ;
+}
+
 body {
   margin: 0;
   padding: 0;
 }
+a{
+  text-decoration: none;
+}
+/*New Navbar global */
+.nav-container{
+  background-color: #867c7c;
+  color:white;
+}
+.nav-hamburguer-icon{
+  font-size: 2rem;
+  display: block;
+}
+.nav-hamburguer-icon:hover{
+  color:rgb(182, 165, 165);
+}
 
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+.nav-brand {
+  font-family: 'Cardo', serif;
+  color: #fff;
+  font-weight: 400;
+  font-size: 2.5rem;
+  /* margin-left: 50px; */
+}
+.link-btn{
+  font-family: 'Cardo', serif;
+}
+.btn-link-desk{
+margin:0px 20px;
+}
+.contact-link{
+  margin-right: 50px;
+}
+.nav-links{
+  display:none;
+}
 
+@media screen and (min-width: 600px) {
+  .nav-links{
+      width:25%;
+      display:flex;
+      flex-direction: row;
+      justify-content: flex-end;
+  }
+
+  .nav-links > a{
+      color:white;
+      text-decoration: none;
+      font-size: 1.2em;
+  }
+  .nav-links > a:not(:last-child){
+      margin-right: 1em;
+  }
+  .nav-hamburguer-icon{
+      display:none;
+  }
+  .overlay-container-hidden{
+      display: none;
+  }
+}
+
+/*Overlay menu classes */
+.overlay-container-show{
+  overflow: hidden;
+  position: fixed;
+  background-color: black;
+  opacity: 0.9;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  transition: left linear 500ms;
+}
+
+.overlay-container-hidden{
+  overflow: hidden;
+  position: fixed;
+  background-color: black;
+  opacity: 0.4;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: -600px;
+  width: 100%;
+  z-index: 1;
+  transition: left linear 500ms;
+}
+
+.overlay-buttonClose{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: .5em;
+  font-size: 4em;
+}
+
+.overlay-menu-wrapper{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.overlay-menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-bottom: 10em;
+}
+
+.overlay-menu a{
+  font-size: 2.5em;
+  font-weight: 100;
+  text-decoration: none;
+  color: #818181;
+  transition: 0.3s;
+}
+
+.overlay-menu a:hover, .overlay-menu a:focus {
+  color: #f1f1f1;
+}
+
+.overlay-menu-item:not(:last-child){
+  margin-bottom: .3em;
+}

@@ -1,11 +1,15 @@
 .aboutContainer {
   display: flex;
   justify-content: center;
-  margin: 30px;
+  margin: 15px;
 }
 
+.titleAbout{
+  font-size: 2rem;
+  color: #1e1e1e;
+}
 .imgBoxAbout {
-  width: 40%;
+  width: 38%;
   display: flex;
   justify-content: center;
 }
@@ -20,8 +24,41 @@
 
 .textBoxAbout h1 {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 120px;
 }
 .textBoxAbout p {
-  margin: 10px 50px;
+  margin: 10px 30px;
+  font-size: 20px;
+  color: #1e1e1e;
+  font-family: 'Cardo', serif;
+}
+@media (max-width: 375px){
+  .aboutContainer {
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imgBoxAbout {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .imgBoxAbout img{
+    width: 80%;
+  }
+  
+  .textBoxAbout {
+    width: 100%;
+  }
+  
+  .textBoxAbout h1 {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .textBoxAbout p {
+    margin:0;
+  }
 }
